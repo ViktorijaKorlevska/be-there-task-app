@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2021</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+<div class="container">
+<a class="logo" href="#">Be<span>There</span></a>
+<img id="mobile-cta" class="mobile-menu" src="assets/menu.svg " alt="open navigation"></img>
+
+<nav>
+    <img id="mobile-logout" class="mobile-logout" src="assets/logout.svg " alt="logout navigation"></img>
+    <ul class="primary-nav">
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="#">Features</a> </li> 
+        <li><a href="#">Pricing</a></li>
+    </ul>
+    <ul class="secondary-nav">
+        <li><a href="#">Contact</a></li>
+        <li class="go-premium-cta"><a href="#">Go premium</a> </li> 
+       </ul>
+</nav>
+</div>
+ </div>
+ <section class="hero">
+     <div class="container">
+         <div class="left-col">
+             <p class="subhead">It's Nitty &amp; Gritty</p>
+             <h1>A task app that doesn't stink</h1>
+             <div class="hero-cta">
+                 <a href="#" class="primary-cta">Try for free</a>
+                 <a href="#" class="whatch-video-cta">
+                     <img class="video" src="assets/video.svg" alt="Watch video here">Watch video here<img>
+                 </a>
+             </div>
+         </div>
+         <div class="hero-image">
+         <img src="assets/illustration.svg" class="hero-image" alt="illustartion"></img>     </div>
+        </div>
+ </section>
+ <section class="features-section">
+     <div class="container">
+         <ul>
+             <li id="t">Unlimited tasks</li>
+             <li>SMS tasks reminder</li>
+             <li>Confeti explosions upon tasks completions</li>
+             <li>Social media annoucment</li>
+             <li>Real time collaboration</li>
+             <li>Other awesome features</li>
+         </ul>
+         <img src="assets/holdingPhone.jpg" alt="holing phone"></img>
+
+     </div> 
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="assets/person.svg" alt="person">
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Etiam non metus magna. Donec eget aliquam est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce fringilla accumsan maximus. Nam auctor lacinia dolor, nec congue odio bibendum eu. Nulla quis nibh mauris. Nullam elementum volutpat lectus vel cursus. Integer eu purus nisi.</blockquote>
+                        <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="assets/person.svg" alt="person">
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Etiam non metus magna. Donec eget aliquam est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce fringilla accumsan maximus. Nam auctor lacinia dolor, nec congue odio bibendum eu. Nulla quis nibh mauris. Nullam elementum volutpat lectus vel cursus. Integer eu purus nisi.</blockquote>
+                        <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="assets/person.svg" alt="person">
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Etiam non metus magna. Donec eget aliquam est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce fringilla accumsan maximus. Nam auctor lacinia dolor, nec congue odio bibendum eu. Nulla quis nibh mauris. Nullam elementum volutpat lectus vel cursus. Integer eu purus nisi.</blockquote>
+                        <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+           <div class="contact-left">
+               <h2>Contact</h2>
+               <form action="">
+                   <label for="name">Name</label>
+                   <input type="text" id="name" name="name">
+                   <label for="email">email</label>
+                   <input type="email" id="email" name="email">
+                   <label for="message">Message</label>
+                   <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                   <input type="submit" class="send-message-cta" value="send message">
+               </form>
+           </div>
+           <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=beverly hills&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fridaynightfunkin.net/friday-night-funkin-mods-fnf-play-online/">Friday Night Funkin Mods</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+        </div>
+    </section>
+<script>
+    const mobileBtn=document.getElementById('mobile-cta')
+    nav=document.querySelector('nav')
+    mobileBtnExit=document.getElementById('mobile-logout');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+ mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+</script>
+</body>
+</html>

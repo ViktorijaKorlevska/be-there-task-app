@@ -1,0 +1,1 @@
+In bash terminal run: npm run start
